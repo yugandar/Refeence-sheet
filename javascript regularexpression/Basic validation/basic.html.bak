@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+ <head>
+   <title>Document</title>
+   <script type="text/javascript">
+   <!--
+   function validate()
+   {
+	var a=document.getElementById("t1").value;
+	var b=document.getElementById("t2").value;
+	if(a==b)
+	   {
+	 document.getElementById("ss").innerHTML="Password matching...";
+		  document.getElementById("ss").style.color="pink";
+		   return false;
+	   }
+	 else
+	   {
+		  // alert("password not matching...");
+		  document.getElementById("ss").innerHTML="Password not matching...";
+		  document.getElementById("ss").style.color="red";
+		   return false;
+	   }
+   return true;
+   }//-->
+   </script>
+ </head>
+ <body bgcolor="green">
+  <form method="post" action="ss.jsp">
+	<h2>password:<input type="password" id="t1"><br>
+Re-typepassword:<input type="password" id="t2"><div id="ss"></div><br>
+	<input type="submit" value="Login" onclick="return validate();">
+  </form>
+ </body>
+</html>

@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+ <head>
+    <title>Document</title>
+	<script type="text/javascript">
+	<!--
+		function order()
+		{
+var a=	document.getElementById("guldu").value;
+alert("DosaType is :"+a)
+		}
+	//-->
+	</script>
+ </head>
+ <body>
+  <h1>DossaType<input type="text" id="guldu"><br>
+  <input type="button" value="Order" onclick="order()">
+ </body>
+</html>

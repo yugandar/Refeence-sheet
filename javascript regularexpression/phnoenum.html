@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html>
+ <head>
+ </head>
+ <body>
+ Enter the Phone no: <input type="text" id="phone" required /> <br />
+  <input type="submit" value="Validate" onclick="phoneno();"/>
+ <script> 
+  function phoneno()
+ { 
+var phone_no = /^[0-9]{10}$/;
+ var text = document.getElementById("phone");
+ if(!phone_no.test(text.value))
+ { 
+alert("Enter Correct phone no"); 
+text.focus();
+ }
+ else
+	 {
+		 alert(" valid phone no!!!");
+	 }
+
+ }
+
+ </script>
+ </body>
+ </html>

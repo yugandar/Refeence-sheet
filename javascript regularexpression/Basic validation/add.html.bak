@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+ <head>
+    <title>Document</title>
+	<script type="text/javascript">
+	<!--
+		function add()
+		{
+		var a=(parseInt(document.getElementsByName("t1")[0].value[]));
+		var b=(parseInt(document.getElementsByName("t2")[0].value));
+		c=a+b;
+		document.getElementById("t3").value=c;
+		}
+	function sub()
+		{
+		var a=(parseInt(document.getElementById("t1").value));
+		var b=(parseInt(document.getElementById("t2").value));
+		c=a-b;
+		document.getElementById("t3").value=c;
+		}
+	//-->
+	</script>
+ </head>
+ <body>
+  <h2>Enter No1:<input type="text" name="t1"><br>
+  <h2>Enter No2:<input type="text" name="t2"><br>
+  <h2>Ans:<input type="text" id="t3"><br></h2>
+  <input type="button" value="Add" onclick="add()">
+  <input type="button" value="Sub" onclick="sub()">
+ </body>
+</html>

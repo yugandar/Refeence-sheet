@@ -1,0 +1,25 @@
+<head>
+<script>
+function Validation()
+{
+var emilid=document.myForm.email.value;
+atpos=emilid.indexOf("@");
+dotpos=emilid.lastIndexOf(".");
+if(atpos<1 || (dotpos-atpos < 2))
+			{
+				alert("invalid Email address!!!");
+				//document.myForm.email.focus();
+				return false;
+			}
+			return true;
+		}
+		
+</script>
+</head>
+<body>
+<form name="myForm" method="post" onsubmit="Validation(this.form)">
+Enter a usr emailid:<input type="text" name="email"/>
+<input type="submit" name="sub" value="submit">
+
+</form>
+</body>

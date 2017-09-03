@@ -1,0 +1,17 @@
+<html>
+<head>
+<script type="text/javascript">
+function  getvalue()
+{
+	var a=document.getElementById('name').value;
+	document.write("<h1>u entered:      "+a+"</h1>");
+	
+	
+}
+</script>
+<form>
+Enter any text:<input type="text" id="name"/></br>
+<input type="button" onclick="getvalue();" value="getvalue">
+</form>
+</head>
+</html>

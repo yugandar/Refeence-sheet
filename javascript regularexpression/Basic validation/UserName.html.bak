@@ -1,0 +1,29 @@
+<head>
+<script>
+function Validation()
+        {
+            var a = document.form.name.value;
+            if (a==""||a==null)
+		{
+		alert("Enter any charactors must be!");
+            	return false;
+		      
+		}
+		
+			if((a.length < 5)||(a.length > 8))
+		{
+
+		alert("char must be 5 to 8 alphabets !");
+            	return false;
+		}
+		}
+		
+</script>
+</head>
+<body>
+<form name="form" method="post" onsubmit="Validation()">
+Enter a usr password:<input type="password" name="name"/></br>
+<input type="submit" name="sub" value="submit">
+
+</form>
+</body>

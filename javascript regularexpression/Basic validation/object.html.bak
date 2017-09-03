@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <script type="text/javascript">
+  <!--
+	var person ={
+		name:"sathish",
+		age:30
+		};
+
+		document.getElementById("ss").innerHTML=person.age;
+  //-->
+  </script>
+  
+    <title>Document</title>
+ </head>
+ <body>
+  <div id="ss"></div>
+ </body>
+</html>

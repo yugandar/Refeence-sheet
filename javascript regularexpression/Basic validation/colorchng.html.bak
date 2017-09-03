@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+ <head>
+    <title>Document</title>
+	<script type="text/javascript">
+	<!--
+		function chng()
+		{
+			document.getElementById("t1").innerHTML="JSPIDERS";
+		}
+		function red()
+		{
+document.getElementById("t1").style.color="red";
+document.getElementById("t1").style.fontSize="80px";
+		}
+	//-->
+	</script>
+ </head>
+ <body>
+  <p><h2 >Java Developers @<i id="t1"> Qspiders</i> Banasavadi</h2><br>
+  <input type="button" value="Red" onclick="red()">
+  <input type="button" value="Green" onclick="green()">
+  <input type="button" value="Blue" onclick="blue()">
+  <input type="button" value="Chng" onclick="chng()">
+ </body>
+</html>

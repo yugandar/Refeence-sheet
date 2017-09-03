@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+ <head>
+    <title>Document</title>
+	<script type="text/javascript">
+	<!--
+		function val()
+		{
+		var user=/^[A-Za-z]{2,5}$/;
+var text=document.getElementById("usn");
+		if(!user.test(text.value))
+			{
+				alert("Invalid username")
+			}
+			else
+			{
+				alert("valid");
+			}
+		}
+	//-->
+	</script>
+ </head>
+ <body bgcolor="pink">
+  <h2>Username:<input type="text" id="usn"><br>
+  <input type="button" value="Login" onclick="val();">
+ </body>
+</html>

@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+ <head>
+   <title>Document</title>
+ </head>
+ <body>
+ <form method="post" action="data.jsp">
+	<h2>
+ <center>
+  Username:<input type="text" name="" required pattern="[A-Z]{1}[a-z]{3}[. _]{1}[A-Z]{1,2}" title="Only first letter uppercase allowed numbers not allowed"><br>
+  Mobile:<input type="text" name="" required ><br>
+  <input type="submit" value="Login">
+ </h2>
+ </form>
+ </body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Moving Text</title>
+<script language="JavaScript">
+<!--
+var text="The Yankees beat the Mariners 8-2!"
+var result="start"
+function movingtext(){
+if (result=="start"){
+for (var i=1; i<=140; i++){
+text=" "+text
+}
+result=text
+}
+result=result.substring(1,result.length)
+window.status=result
+if (result==""){
+result=text
+}
+setTimeout("movingtext()",150)
+}
+//-->
+</script>
+</head>
+<body onLoad="movingtext()"; return true>
+<h2>Have a look at the status line!</h2>
+</body>
+</html>

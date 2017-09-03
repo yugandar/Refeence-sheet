@@ -1,0 +1,150 @@
+1.	function formValidation()  
+2.	{  
+3.	var uid = document.registration.userid;  
+4.	var passid = document.registration.passid;  
+5.	var uname = document.registration.username;  
+6.	var uadd = document.registration.address;  
+7.	var ucountry = document.registration.country;  
+8.	var uzip = document.registration.zip;  
+9.	var uemail = document.registration.email;  
+10.	var umsex = document.registration.msex;  
+11.	var ufsex = document.registration.fsex; if(userid_validation(uid,5,12))  
+12.	{  
+13.	if(passid_validation(passid,7,12))  
+14.	{  
+15.	if(allLetter(uname))  
+16.	{  
+17.	if(alphanumeric(uadd))  
+18.	{   
+19.	if(countryselect(ucountry))  
+20.	{  
+21.	if(allnumeric(uzip))  
+22.	{  
+23.	if(ValidateEmail(uemail))  
+24.	{  
+25.	if(validsex(umsex,ufsex))  
+26.	{  
+27.	}  
+28.	}   
+29.	}  
+30.	}   
+31.	}  
+32.	}  
+33.	}  
+34.	}  
+35.	return false;  
+36.	  
+37.	} function userid_validation(uid,mx,my)  
+38.	{  
+39.	var uid_len = uid.value.length;  
+40.	if (uid_len == 0 || uid_len >= my || uid_len < mx)  
+41.	{  
+42.	alert("User Id should not be empty / length be between "+mx+" to "+my);  
+43.	uid.focus();  
+44.	return false;  
+45.	}  
+46.	return true;  
+47.	}  
+48.	function passid_validation(passid,mx,my)  
+49.	{  
+50.	var passid_len = passid.value.length;  
+51.	if (passid_len == 0 ||passid_len >= my || passid_len < mx)  
+52.	{  
+53.	alert("Password should not be empty / length be between "+mx+" to "+my);  
+54.	passid.focus();  
+55.	return false;  
+56.	}  
+57.	return true;  
+58.	}  
+59.	function allLetter(uname)  
+60.	{   
+61.	var letters = /^[A-Za-z]+$/;  
+62.	if(uname.value.match(letters))  
+63.	{  
+64.	return true;  
+65.	}  
+66.	else  
+67.	{  
+68.	alert('Username must have alphabet characters only');  
+69.	uname.focus();  
+70.	return false;  
+71.	}  
+72.	}  
+73.	function alphanumeric(uadd)  
+74.	{   
+75.	var letters = /^[0-9a-zA-Z]+$/;  
+76.	if(uadd.value.match(letters))  
+77.	{  
+78.	return true;  
+79.	}  
+80.	else  
+81.	{  
+82.	alert('User address must have alphanumeric characters only');  
+83.	uadd.focus();  
+84.	return false;  
+85.	}  
+86.	}  
+87.	function countryselect(ucountry)  
+88.	{  
+89.	if(ucountry.value == "Default")  
+90.	{  
+91.	alert('Select your country from the list');  
+92.	ucountry.focus();  
+93.	return false;  
+94.	}  
+95.	else  
+96.	{  
+97.	return true;  
+98.	}  
+99.	}  
+100.	function allnumeric(uzip)  
+101.	{   
+102.	var numbers = /^[0-9]+$/;  
+103.	if(uzip.value.match(numbers))  
+104.	{  
+105.	return true;  
+106.	}  
+107.	else  
+108.	{  
+109.	alert('ZIP code must have numeric characters only');  
+110.	uzip.focus();  
+111.	return false;  
+112.	}  
+113.	}  
+114.	function ValidateEmail(uemail)  
+115.	{  
+116.	var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
+117.	if(uemail.value.match(mailformat))  
+118.	{  
+119.	return true;  
+120.	}  
+121.	else  
+122.	{  
+123.	alert("You have entered an invalid email address!");  
+124.	uemail.focus();  
+125.	return false;  
+126.	}  
+127.	} function validsex(umsex,ufsex)  
+128.	{  
+129.	x=0;  
+130.	  
+131.	if(umsex.checked)   
+132.	{  
+133.	x++;  
+134.	} if(ufsex.checked)  
+135.	{  
+136.	x++;   
+137.	}  
+138.	if(x==0)  
+139.	{  
+140.	alert('Select Male/Female');  
+141.	umsex.focus();  
+142.	return false;  
+143.	}  
+144.	else  
+145.	{  
+146.	alert('Form Succesfully Submitted');  
+147.	window.location.reload()  
+148.	return true;  
+149.	}  
+150.	}

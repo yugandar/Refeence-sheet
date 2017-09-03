@@ -1,0 +1,16 @@
+<html>
+<head>
+<script type="text/javascript">
+function  data()
+{
+	var a=document.getElementsByName('usn')[].value;
+	alert(a);
+}
+</script>
+<form>
+<center>
+Enter UserName:<input name= "usn" type="text"></br>
+<input type="button" onclick="data();" value="Login!" style=color:"green";background-color:pink;font:1em;>
+</form>
+</head>
+</html>

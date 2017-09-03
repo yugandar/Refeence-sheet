@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <script type="text/javascript">
+  <!--
+	function order()
+	{
+var a=	document.getElementsByName("typ")[0].value;
+var b=	document.getElementsByName("qty")[0].value;
+var c=	document.getElementsByName("cost")[0].value;
+alert("Type: "+a +"\n Qty: "+b+"\n Cost: "+c);
+//document.write("Type: "+a +"\n Qty: "+b+"\n Cost: "+c);
+	}
+	function load()
+	{
+		alert("WELCOME to OUR coffe shope website")
+	}
+	function focus1()
+	{
+		alert("Your trying to enter Account no ..!")
+	}
+	function element()
+	{
+		var a=	document.getElementsByName("typ")[0].value;
+		alert("AccountNo is   " +a);
+	}
+  //-->
+  </script>
+  <title>Document</title>
+ </head>
+ <body bgcolor="pink" >
+ <center>
+ <h1>Coffe Shope order</h1>
+ <H3> AccountNo<input type="text" name="typ" id="t1" onfocus="focus1();" onblur="element();"><br>
+ <H3> Amount<input type="text" name="qty" id="t2"></br>
+ <H3> Cost:<input type="text" name="cost" id="t3"><br>
+ <input type="button" value="Order" onkeyup="order();">
+  
+ </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html>
+ <head>
+ </head>
+ <body>
+ <div>
+ <form>
+ <center><br/><br/><br/><br/><br/><br/>
+ Enter the Username <input type="text" id="uname"/><label>only letter nd no </label> <br /><br/><br/>
+  <input type="submit" value="Validate" onclick="username();"/> 
+</form>
+ <script> 
+  function username()
+ { 
+var user_name = /[^a-c]/;
+ var text = document.getElementById("uname");
+ if(!user_name.test(text.value))
+ { 
+alert("Enter Correct Username"); 
+//text.focus();
+ }
+ else
+	 {
+		 alert(" Valid name !!!!");
+	 }
+ }
+ </script>
+ </div>
+ </body>
+ </html>

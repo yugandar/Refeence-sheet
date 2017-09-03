@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+<html>
+ <body>
+  Enter the EmilId <input type="text" id="eid" /> <br />
+ <input type="submit" value="Validate" onclick="E_id();"/> 
+</form>
+ <script> 
+  function E_id()
+ { 
+var e_id =/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+var eidcheck =document.getElementById("eid");
+ if(!e_id.test(eidcheck.value))
+	 {
+		 alert("wrong email eid");
+		eidcheck.focus();
+	 }
+
+	 else
+	 {
+		 alert(" done");
+	 }
+ }
+ </script>
+ </body>
+ </html>
